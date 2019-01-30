@@ -37,7 +37,7 @@ steps:
         displayName: 'print environment variables'
 - script: |
         npm run cy:verify
-      displayName: 'Cypress verify'
+        displayName: 'Cypress verify'
 - script: |
         npm run test:ci:record
         displayName: 'Run Cypress tests'
