@@ -24,6 +24,11 @@ steps:
     command: custom
     customCommand: 'test'
 
+- task: Npm@1
+  displayName: 'npm run cypress test'
+  inputs:
+    command: '$(npm bin)/cypress run --record'
+
 - task: PublishTestResults@2
   inputs:
     testResultsFiles: '**/TEST-RESULTS.xml'
