@@ -14,11 +14,6 @@ steps:
     command: install
 
 - task: Npm@1
-  displayName: 'npm start'
-  inputs:
-    command: start -- --silent &
-
-- task: Npm@1
   displayName: 'npm test'
   inputs:
     command: custom
