@@ -16,7 +16,7 @@ steps:
 - task: Npm@1
   displayName: 'npm install'
   inputs:
-    command: 'npm install cypress --save-dev'
+    command: install cypress --save-dev
 
 - task: Npm@1
   displayName: 'npm install'
